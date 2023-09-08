@@ -16,3 +16,21 @@ C:\Users\deguzman.238962\Source\Repos\hlrmp\Account-Registration\Account Registr
 C:\Users\deguzman.238962\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.pdb
 C:\Users\deguzman.238962\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.genruntimeconfig.cache
 C:\Users\deguzman.238962\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\ref\Account Registration.dll
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\bin\Debug\net6.0-windows\Account Registration.exe
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\bin\Debug\net6.0-windows\Account Registration.deps.json
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\bin\Debug\net6.0-windows\Account Registration.runtimeconfig.json
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\bin\Debug\net6.0-windows\Account Registration.dll
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\bin\Debug\net6.0-windows\Account Registration.pdb
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.csproj.AssemblyReference.cache
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account_Registration.Form1.resources
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account_Registration.FrmConfirm.resources
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.csproj.GenerateResource.cache
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.AssemblyInfoInputs.cache
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.AssemblyInfo.cs
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.csproj.CoreCompileInputs.cache
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.dll
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\refint\Account Registration.dll
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.pdb
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\Account Registration.genruntimeconfig.cache
+C:\Users\reichel domingo\Source\Repos\hlrmp\Account-Registration\Account Registration\obj\Debug\net6.0-windows\ref\Account Registration.dll

@@ -21,9 +21,28 @@ namespace Account_Registration
             StudentInfoClass.ContactNo = Convert.ToInt64(txtcnt.Text.ToString());
             StudentInfoClass.StudentNo = Convert.ToInt64(txtage.Text.ToString());
 
-            fcon.Show();
+            fcon.ShowDialog();
 
-            fcon.label9.Text = txtfn.Text.ToString();
+            if (fcon.ShowDialog().Equals(DialogResult.OK))
+            {
+                textBoxsn.ResetText();
+                comboBox1program.ResetText();
+                txtln.ResetText();
+                txtfn.ResetText();
+                txtmn.ResetText();
+                txtage.ResetText();
+                txtcnt.ResetText();
+                ttxtaddress.ResetText();
+
+
+            }
+
+            else
+            {
+
+            }
+
+          //  fcon.label9.Text = txtfn.Text.ToString();
 
 
 

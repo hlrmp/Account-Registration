@@ -22,29 +22,32 @@ namespace Account_Registration
         {
             InitializeComponent();
 
-            DelProgram = new DelegateText(StudentInfoClass.GetLastName);
+            DelLastName = new DelegateText(StudentInfoClass.GetLastName);
             DelfirstName = new DelegateText(StudentInfoClass.GetFirstName);
-            DelLastName = new DelegateText(StudentInfoClass.GetMiddleName);
-            DelMiddleName = new DelegateText(StudentInfoClass.GetAddress);
-            DelAddress = new DelegateText(StudentInfoClass.GetProgram);
-
+            DelMiddleName = new DelegateText(StudentInfoClass.GetMiddleName);
+            DelAddress = new DelegateText(StudentInfoClass.GetAddress);
+            DelProgram = new DelegateText(StudentInfoClass.GetProgram);
+            
             DelNumAge = new DelegateNumber(StudentInfoClass.GetAge);
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
 
             labelpro.Text = DelProgram(StudentInfoClass.Program);
-            labelfm.Text = DelProgram(StudentInfoClass.FirstName);
-            labelmn.Text = DelProgram(StudentInfoClass.MiddleName);
-            labelln.Text = DelProgram(StudentInfoClass.LastName);
-            labeladd.Text = DelProgram(StudentInfoClass.Address);
+            labelfm.Text = DelfirstName(StudentInfoClass.FirstName);
+            labelmn.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            labelln.Text = DelLastName(StudentInfoClass.LastName);
+            labeladd.Text = DelAddress(StudentInfoClass.Address);
 
             //labelage.Text = DelProgram(StudentInfoClass.Age);
+            //  long newage = Convert.ToInt64(StudentInfoClass.Age);
 
-            labelage.Text = Convert.ToInt64(StudentInfoClass.Age);
+
+             // labelage.Text = DelNumAge(Convert.ToInt64(newage));
 
         }
 
 
     }
+
 }
