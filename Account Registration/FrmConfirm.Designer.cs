@@ -50,88 +50,98 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 63);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(18, 36);
             label1.Name = "label1";
-            label1.Size = new Size(73, 15);
+            label1.Size = new Size(86, 17);
             label1.TabIndex = 0;
             label1.Text = "Student No :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(32, 120);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(273, 36);
             label2.Name = "label2";
-            label2.Size = new Size(59, 15);
+            label2.Size = new Size(69, 17);
             label2.TabIndex = 1;
             label2.Text = "Program :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 183);
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(75, 104);
             label3.Name = "label3";
-            label3.Size = new Size(69, 15);
+            label3.Size = new Size(81, 17);
             label3.TabIndex = 2;
             label3.Text = "Last Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(21, 236);
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(73, 141);
             label4.Name = "label4";
-            label4.Size = new Size(70, 15);
+            label4.Size = new Size(83, 17);
             label4.TabIndex = 3;
             label4.Text = "First Name :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(6, 291);
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(55, 182);
             label5.Name = "label5";
-            label5.Size = new Size(85, 15);
+            label5.Size = new Size(99, 17);
             label5.TabIndex = 4;
             label5.Text = "Middle Name :";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(57, 348);
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(178, 244);
             label6.Name = "label6";
-            label6.Size = new Size(34, 15);
+            label6.Size = new Size(40, 17);
             label6.TabIndex = 5;
             label6.Text = "Age :";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(36, 398);
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(155, 284);
             label7.Name = "label7";
-            label7.Size = new Size(55, 15);
+            label7.Size = new Size(63, 17);
             label7.TabIndex = 6;
             label7.Text = "Contact :";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(36, 443);
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(153, 329);
             label8.Name = "label8";
-            label8.Size = new Size(55, 15);
+            label8.Size = new Size(65, 17);
             label8.TabIndex = 7;
             label8.Text = "Address :";
             // 
             // button1
             // 
-            button1.Location = new Point(175, 489);
+            button1.BackColor = Color.FromArgb(255, 128, 128);
+            button1.Font = new Font("Sitka Subheading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(288, 373);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(107, 37);
             button1.TabIndex = 8;
             button1.Text = "SUBMIT";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // labelsn
             // 
             labelsn.AutoSize = true;
-            labelsn.Location = new Point(133, 63);
+            labelsn.Location = new Point(110, 38);
             labelsn.Name = "labelsn";
             labelsn.Size = new Size(44, 15);
             labelsn.TabIndex = 9;
@@ -140,7 +150,7 @@
             // labelpro
             // 
             labelpro.AutoSize = true;
-            labelpro.Location = new Point(133, 120);
+            labelpro.Location = new Point(345, 38);
             labelpro.Name = "labelpro";
             labelpro.Size = new Size(50, 15);
             labelpro.TabIndex = 10;
@@ -149,7 +159,7 @@
             // labelln
             // 
             labelln.AutoSize = true;
-            labelln.Location = new Point(133, 183);
+            labelln.Location = new Point(162, 106);
             labelln.Name = "labelln";
             labelln.Size = new Size(42, 15);
             labelln.TabIndex = 11;
@@ -158,7 +168,7 @@
             // labelfm
             // 
             labelfm.AutoSize = true;
-            labelfm.Location = new Point(133, 236);
+            labelfm.Location = new Point(162, 143);
             labelfm.Name = "labelfm";
             labelfm.Size = new Size(43, 15);
             labelfm.TabIndex = 12;
@@ -167,7 +177,7 @@
             // labelmn
             // 
             labelmn.AutoSize = true;
-            labelmn.Location = new Point(133, 291);
+            labelmn.Location = new Point(162, 182);
             labelmn.Name = "labelmn";
             labelmn.Size = new Size(50, 15);
             labelmn.TabIndex = 13;
@@ -176,7 +186,7 @@
             // labelage
             // 
             labelage.AutoSize = true;
-            labelage.Location = new Point(133, 348);
+            labelage.Location = new Point(235, 246);
             labelage.Name = "labelage";
             labelage.Size = new Size(51, 15);
             labelage.TabIndex = 14;
@@ -185,7 +195,7 @@
             // labelco
             // 
             labelco.AutoSize = true;
-            labelco.Location = new Point(133, 398);
+            labelco.Location = new Point(235, 286);
             labelco.Name = "labelco";
             labelco.Size = new Size(52, 15);
             labelco.TabIndex = 15;
@@ -194,7 +204,7 @@
             // labeladd
             // 
             labeladd.AutoSize = true;
-            labeladd.Location = new Point(133, 443);
+            labeladd.Location = new Point(235, 329);
             labeladd.Name = "labeladd";
             labeladd.Size = new Size(52, 15);
             labeladd.TabIndex = 16;
@@ -204,7 +214,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(424, 561);
+            BackColor = Color.Wheat;
+            ClientSize = new Size(469, 436);
             Controls.Add(labeladd);
             Controls.Add(labelco);
             Controls.Add(labelage);

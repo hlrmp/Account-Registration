@@ -7,8 +7,8 @@ namespace Account_Registration
             InitializeComponent();
         }
 
-      //  StudentInfoClass studentInfoClass = new StudentInfoClass();
-       FrmConfirm fcon = new FrmConfirm();
+        //  StudentInfoClass studentInfoClass = new StudentInfoClass();
+        FrmConfirm fcon = new FrmConfirm();
         private void button1_Click(object sender, EventArgs e)
         {
             StudentInfoClass.FirstName = txtfn.Text.ToString();
