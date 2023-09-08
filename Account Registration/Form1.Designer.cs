@@ -44,6 +44,7 @@
             txtcnt = new TextBox();
             label8 = new Label();
             ttxtaddress = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -176,11 +177,22 @@
             ttxtaddress.Size = new Size(433, 91);
             ttxtaddress.TabIndex = 15;
             // 
+            // button1
+            // 
+            button1.Location = new Point(202, 485);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 23);
+            button1.TabIndex = 16;
+            button1.Text = "NEXT";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(551, 482);
+            ClientSize = new Size(551, 544);
+            Controls.Add(button1);
             Controls.Add(ttxtaddress);
             Controls.Add(label8);
             Controls.Add(txtcnt);
@@ -222,5 +234,6 @@
         private TextBox txtcnt;
         private Label label8;
         private TextBox ttxtaddress;
+        private Button button1;
     }
 }
