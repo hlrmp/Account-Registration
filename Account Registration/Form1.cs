@@ -24,7 +24,7 @@ namespace Account_Registration
             fcon.ShowDialog();
 
 
-            DialogResult dr = fcon.ShowDialog(this);
+/*            DialogResult dr = fcon.ShowDialog(this);
             if (dr == DialogResult.OK)
             {
                 textBoxsn.ResetText();
@@ -38,6 +38,8 @@ namespace Account_Registration
 
 
             }
+*/
+
 /*
 
             if (fcon.ShowDialog() == DialogResult.OK)

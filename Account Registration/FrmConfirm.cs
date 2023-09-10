@@ -27,7 +27,7 @@ namespace Account_Registration
             DelMiddleName = new DelegateText(StudentInfoClass.GetMiddleName);
             DelAddress = new DelegateText(StudentInfoClass.GetAddress);
             DelProgram = new DelegateText(StudentInfoClass.GetProgram);
-            
+
             DelNumAge = new DelegateNumber(StudentInfoClass.GetAge);
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
@@ -39,15 +39,28 @@ namespace Account_Registration
             labelln.Text = DelLastName(StudentInfoClass.LastName);
             labeladd.Text = DelAddress(StudentInfoClass.Address);
 
-            // labelage.Text = DelProgram(StudentInfoClass.Age);
+            labelage.Text = DelNumAge(StudentInfoClass.Age).ToString();
+            labelco.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
+            labelsn.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
+
             //  long newage = Convert.ToInt64(StudentInfoClass.Age);
 
             // labelpro.Text = StudentInfoClass.Program;
-             // labelage.Text = DelNumAge(Convert.ToInt64(newage));
+            // labelage.Text = DelNumAge(Convert.ToInt64(newage));
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
 
+            this.Close();
+        }
+
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+         
+        }
     }
 
 }
