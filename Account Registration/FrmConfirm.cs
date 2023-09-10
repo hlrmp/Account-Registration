@@ -33,16 +33,16 @@ namespace Account_Registration
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
 
-            labelpro.Text = DelProgram(StudentInfoClass.Program);
+            labelpro.Text = DelProgram(StudentInfoClass.Program.ToString());
             labelfm.Text = DelfirstName(StudentInfoClass.FirstName);
             labelmn.Text = DelMiddleName(StudentInfoClass.MiddleName);
             labelln.Text = DelLastName(StudentInfoClass.LastName);
             labeladd.Text = DelAddress(StudentInfoClass.Address);
 
-            //labelage.Text = DelProgram(StudentInfoClass.Age);
+            // labelage.Text = DelProgram(StudentInfoClass.Age);
             //  long newage = Convert.ToInt64(StudentInfoClass.Age);
 
-
+            // labelpro.Text = StudentInfoClass.Program;
              // labelage.Text = DelNumAge(Convert.ToInt64(newage));
 
         }

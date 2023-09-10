@@ -137,6 +137,7 @@
             button1.TabIndex = 8;
             button1.Text = "SUBMIT";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // labelsn
             // 
@@ -235,6 +236,7 @@
             Controls.Add(label1);
             Name = "FrmConfirm";
             Text = "FrmConfirm";
+            Load += FrmConfirm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -23,7 +23,24 @@ namespace Account_Registration
 
             fcon.ShowDialog();
 
-            if (fcon.ShowDialog().Equals(DialogResult.OK))
+
+            DialogResult dr = fcon.ShowDialog(this);
+            if (dr == DialogResult.OK)
+            {
+                textBoxsn.ResetText();
+                comboBox1program.ResetText();
+                txtln.ResetText();
+                txtfn.ResetText();
+                txtmn.ResetText();
+                txtage.ResetText();
+                txtcnt.ResetText();
+                ttxtaddress.ResetText();
+
+
+            }
+/*
+
+            if (fcon.ShowDialog() == DialogResult.OK)
             {
                 textBoxsn.ResetText();
                 comboBox1program.ResetText();
@@ -45,7 +62,7 @@ namespace Account_Registration
           //  fcon.label9.Text = txtfn.Text.ToString();
 
 
-
+            */
         }
 
         public delegate long DelegateNumber(long number);
