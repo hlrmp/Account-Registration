@@ -33,6 +33,36 @@ namespace Account_Registration
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
 
+
+
+            //  long newage = Convert.ToInt64(StudentInfoClass.Age);
+
+            // labelpro.Text = StudentInfoClass.Program;
+            // labelage.Text = DelNumAge(Convert.ToInt64(newage));
+
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = (MessageBox.Show(" do you want to submit , " + " \n " + " double check your information  ", "SUBMIT", MessageBoxButtons.OKCancel));
+            if (dialog == DialogResult.OK)
+            {
+                this.DialogResult = DialogResult.OK;
+
+                this.Close();
+            }
+            else
+            {
+
+            }
+
+
+        }
+
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+
             labelpro.Text = DelProgram(StudentInfoClass.Program.ToString());
             labelfm.Text = DelfirstName(StudentInfoClass.FirstName);
             labelmn.Text = DelMiddleName(StudentInfoClass.MiddleName);
@@ -42,24 +72,22 @@ namespace Account_Registration
             labelage.Text = DelNumAge(StudentInfoClass.Age).ToString();
             labelco.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
             labelsn.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
-
-            //  long newage = Convert.ToInt64(StudentInfoClass.Age);
-
-            // labelpro.Text = StudentInfoClass.Program;
-            // labelage.Text = DelNumAge(Convert.ToInt64(newage));
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FrmConfirm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+            DialogResult dialog = (MessageBox.Show(" do you want to submit , " + " \n " + " double check your information  ", "SUBMIT", MessageBoxButtons.OKCancel));
+            if (dialog == DialogResult.OK)
+            {
+                this.DialogResult = DialogResult.OK;
+             
+            }
+            else
+            {
 
-            this.Close();
-        }
+            }
 
-        private void FrmConfirm_Load(object sender, EventArgs e)
-        {
-         
+          
         }
     }
 

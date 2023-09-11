@@ -236,6 +236,7 @@
             Controls.Add(label1);
             Name = "FrmConfirm";
             Text = "FrmConfirm";
+            FormClosing += FrmConfirm_FormClosing;
             Load += FrmConfirm_Load;
             ResumeLayout(false);
             PerformLayout();

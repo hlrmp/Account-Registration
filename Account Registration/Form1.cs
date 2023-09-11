@@ -17,15 +17,25 @@ namespace Account_Registration
             StudentInfoClass.Address = ttxtaddress.Text.ToString();
             StudentInfoClass.Program = comboBox1program.Text.ToString();
 
+           
+
             StudentInfoClass.Age = Convert.ToInt64(txtage.Text.ToString());
             StudentInfoClass.ContactNo = Convert.ToInt64(txtcnt.Text.ToString());
             StudentInfoClass.StudentNo = Convert.ToInt64(txtage.Text.ToString());
 
+            // fcon.ShowDialog(); // 
+            //fcon.Show();
+
+
+               // w/ step 11
+
+            DialogResult dialog = (MessageBox.Show(" do you want to proceed ", "NEXT", MessageBoxButtons.OK));      // w/ step 11
+
+
             fcon.ShowDialog();
 
 
-/*            DialogResult dr = fcon.ShowDialog(this);
-            if (dr == DialogResult.OK)
+            if (dialog == DialogResult.OK)                // step 12
             {
                 textBoxsn.ResetText();
                 comboBox1program.ResetText();
@@ -38,11 +48,15 @@ namespace Account_Registration
 
 
             }
-*/
+            else
+            {
+                MessageBox.Show("please check it again " , "ERROR", MessageBoxButtons.OK);
+            }
+
 
 /*
 
-            if (fcon.ShowDialog() == DialogResult.OK)
+            if (fcon.ShowDialog() == DialogResult.OK) // rekta step 12
             {
                 textBoxsn.ResetText();
                 comboBox1program.ResetText();
