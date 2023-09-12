@@ -76,18 +76,9 @@ namespace Account_Registration
 
         private void FrmConfirm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = (MessageBox.Show(" do you want to submit , " + " \n " + " double check your information  ", "SUBMIT", MessageBoxButtons.OKCancel));
-            if (dialog == DialogResult.OK)
-            {
+            
                 this.DialogResult = DialogResult.OK;
-             
-            }
-            else
-            {
-
-            }
-
-          
+    
         }
     }
 

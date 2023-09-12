@@ -1,3 +1,5 @@
+using System.Timers;
+
 namespace Account_Registration
 {
     public partial class Form1 : Form
@@ -11,49 +13,69 @@ namespace Account_Registration
         FrmConfirm fcon = new FrmConfirm();
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentInfoClass.FirstName = txtfn.Text.ToString();
-            StudentInfoClass.LastName = txtln.Text.ToString();
-            StudentInfoClass.MiddleName = txtmn.Text.ToString();
-            StudentInfoClass.Address = ttxtaddress.Text.ToString();
-            StudentInfoClass.Program = comboBox1program.Text.ToString();
+            try
+            {
+                if (!string.IsNullOrEmpty(txtfn.Text) && !string.IsNullOrEmpty(txtln.Text) && !string.IsNullOrEmpty(txtmn.Text)
+                   && !string.IsNullOrEmpty(ttxtaddress.Text) && !string.IsNullOrEmpty(comboBox1program.Text) &&
+                    !string.IsNullOrEmpty(txtage.Text) && !string.IsNullOrEmpty(txtcnt.Text) && !string.IsNullOrEmpty(textBoxsn.Text))
+                {
+                    StudentInfoClass.FirstName = txtfn.Text.ToString();
+                    StudentInfoClass.LastName = txtln.Text.ToString();
+                    StudentInfoClass.MiddleName = txtmn.Text.ToString();
+                    StudentInfoClass.Address = ttxtaddress.Text.ToString();
+                    StudentInfoClass.Program = comboBox1program.Text.ToString();
 
-           
 
-            StudentInfoClass.Age = Convert.ToInt64(txtage.Text.ToString());
-            StudentInfoClass.ContactNo = Convert.ToInt64(txtcnt.Text.ToString());
-            StudentInfoClass.StudentNo = Convert.ToInt64(txtage.Text.ToString());
+                        StudentInfoClass.Age = Convert.ToInt64(txtage.Text.ToString());
+                        StudentInfoClass.ContactNo = Convert.ToInt64(txtcnt.Text.ToString());
+                        StudentInfoClass.StudentNo = Convert.ToInt64(textBoxsn.Text.ToString());
 
+                        // w/ step 11
+
+                        DialogResult dialog = (MessageBox.Show(" do you want to proceed ", "NEXT", MessageBoxButtons.OK));      // w/ step 11
+
+
+                        fcon.ShowDialog();
+
+
+                        if (dialog == DialogResult.OK)                // step 12
+                        {
+                            textBoxsn.ResetText();
+                            comboBox1program.ResetText();
+                            txtln.ResetText();
+                            txtfn.ResetText();
+                            txtmn.ResetText();
+                            txtage.ResetText();
+                            txtcnt.ResetText();
+                            ttxtaddress.ResetText();
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("please check it again ", "ERROR", MessageBoxButtons.OK);
+                        }
+                    }
+                  
+
+               else
+               {
+                   MessageBox.Show("Please fill up the FF.", "error", MessageBoxButtons.OK);
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+               MessageBox.Show("please check the input informaton  ", "INVALID INPUT", MessageBoxButtons.OK);
+  
+            }
             // fcon.ShowDialog(); // 
             //fcon.Show();
 
 
-               // w/ step 11
-
-            DialogResult dialog = (MessageBox.Show(" do you want to proceed ", "NEXT", MessageBoxButtons.OK));      // w/ step 11
-
-
-            fcon.ShowDialog();
-
-
-            if (dialog == DialogResult.OK)                // step 12
-            {
-                textBoxsn.ResetText();
-                comboBox1program.ResetText();
-                txtln.ResetText();
-                txtfn.ResetText();
-                txtmn.ResetText();
-                txtage.ResetText();
-                txtcnt.ResetText();
-                ttxtaddress.ResetText();
-
-
-            }
-            else
-            {
-                MessageBox.Show("please check it again " , "ERROR", MessageBoxButtons.OK);
-            }
-
-
+     
 /*
 
             if (fcon.ShowDialog() == DialogResult.OK) // rekta step 12
